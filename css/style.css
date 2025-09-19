@@ -335,6 +335,44 @@ p {
   margin-bottom: 0.5rem;
 }
 
+/* Plan Icons */
+.plan-icon {
+  font-size: 2.2rem;
+  color: #0a2540;
+  margin-bottom: 1rem;
+}
+
+.plan-highlight .plan-icon {
+  color: #f0b429;
+}
+
+/* CTA Buttons */
+.plan-cta {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  background: #0a2540;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.plan-cta:hover {
+  background: #163c64;
+  transform: translateY(-2px);
+}
+
+.highlight-btn {
+  background: #f0b429;
+  color: #0a2540;
+}
+
+.highlight-btn:hover {
+  background: #dba416;
+}
+
 /* ===========================
    Loans Section
 =========================== */
