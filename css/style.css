@@ -295,6 +295,30 @@ p {
   font-weight: 500;
 }
 
+
+
+.plan {
+  background: url("images/stats.webp") center/cover no-repeat;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #0a2540; /* ensure text is readable */
+}
+
+.plan h3,
+.plan li,
+.plan .plan-cta {
+  color: #0a2540;
+}
+
+.plan:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+
+
 /* Responsive grid adjustment */
 @media (max-width: 992px) {
   .plan-grid {
