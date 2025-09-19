@@ -377,13 +377,53 @@ p {
 /* ===========================
    Loans Section
 =========================== */
-.loans p {
+.loans-section {
+  padding: 4rem 2rem;
   text-align: center;
-  max-width: 700px;
-  margin: 0 auto 2rem;
-  font-size: 1.1rem;
 }
 
+.loan-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.loan-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Divider hidden by default */
+.loan-divider {
+  display: none;
+}
+
+/* Desktop Layout */
+@media (min-width: 992px) {
+  .loan-layout {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    text-align: left;
+  }
+
+  .loan-image {
+    flex: 1;
+  }
+
+  .loan-content {
+    flex: 1;
+  }
+
+  .loan-divider {
+    display: block;
+    width: 2px;
+    height: 300px;
+    background: linear-gradient(to bottom, #ddd, #aaa);
+  }
+}
 /* ===========================
    Testimonials
 =========================== */
