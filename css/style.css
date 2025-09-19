@@ -377,23 +377,37 @@ p {
 /* ===========================
    Loans Section
 =========================== */
+/* Loan Section */
 .loans-section {
   padding: 4rem 2rem;
   text-align: center;
 }
 
 .loans-section .section-title {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 700;
   color: #0a2540;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+/* Yellow underline */
+.loans-section .section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #f4b400; /* yellow brand accent */
+  margin: 0.6rem auto 0 auto;
+  border-radius: 2px;
 }
 
 .loan-layout {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   gap: 1.5rem;
 }
 
@@ -412,17 +426,18 @@ p {
 }
 
 .loan-content .section-subtitle {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #444;
+  font-size: 1.2rem; /* increased for readability */
+  line-height: 1.8;
+  color: #333;
   margin-bottom: 1.5rem;
 }
 
+/* CTA button yellow */
 .loan-content .cta-button {
   padding: 0.9rem 2rem;
-  font-size: 1rem;
+  font-size: 1.05rem;
   border-radius: 50px;
-  background: linear-gradient(135deg, #0a2540, #17395c);
+  background: #f4b400;
   color: #fff;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -431,7 +446,7 @@ p {
 }
 
 .loan-content .cta-button:hover {
-  background: linear-gradient(135deg, #17395c, #0a2540);
+  background: #d99a00;
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
@@ -459,6 +474,11 @@ p {
     width: 2px;
     height: 280px;
     background: linear-gradient(to bottom, #eee, #bbb);
+  }
+
+  /* Make sure paragraph looks larger on desktop */
+  .loan-content .section-subtitle {
+    font-size: 1.25rem;
   }
 }
 
