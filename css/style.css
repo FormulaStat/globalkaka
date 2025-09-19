@@ -306,16 +306,6 @@ p {
   color: #0a2540; /* ensure text is readable */
 }
 
-.plan h3,
-.plan li,
-.plan .plan-cta {
-  color: #0a2540;
-}
-
-.plan:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-}
 
 
 
