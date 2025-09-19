@@ -382,21 +382,58 @@ p {
   text-align: center;
 }
 
+.loans-section .section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0a2540;
+  margin-bottom: 2rem;
+}
+
 .loan-layout {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  gap: 1.5rem;
 }
 
 .loan-image img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
-/* Divider hidden by default */
 .loan-divider {
   display: none;
+}
+
+.loan-content {
+  max-width: 600px;
+}
+
+.loan-content .section-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.loan-content .cta-button {
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #0a2540, #17395c);
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.loan-content .cta-button:hover {
+  background: linear-gradient(135deg, #17395c, #0a2540);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 /* Desktop Layout */
@@ -420,10 +457,11 @@ p {
   .loan-divider {
     display: block;
     width: 2px;
-    height: 300px;
-    background: linear-gradient(to bottom, #ddd, #aaa);
+    height: 280px;
+    background: linear-gradient(to bottom, #eee, #bbb);
   }
 }
+
 /* ===========================
    Testimonials
 =========================== */
